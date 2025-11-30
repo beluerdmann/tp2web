@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Usher II - Aventura Gráfica</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" type="image/png" sizes="32x32" href="img/planeta.png">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark sticky-top">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#top">Usher II</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto nav-underline">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#presentación">Presentación</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#produccion">Producción</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#desarrolladores">Desarrolladores</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#explorar">Explorar</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <header id="top">
+        <div class="videoFondo">
+
+            <video autoplay muted loop class="bg-video">
+                <source src="img/fondo.mp4" type="video/mp4" />
+            </video>
+
+            <div class="overlay"></div>
+
+            <div class="textoFondo">
+                <img class="imgUsher" src="img/titulo.png" alt="Título Usher II" />
+                <p class="lead">Una aventura gráfica inspirada en el universo de Ray Bradbury.</p>
+            </div>
+
+        </div>
+    </header>
+
+    <!-- INFORMACIÓN Y PROCESO -->
+    <section id="presentación">
+        <div class="container">
+            <h2 class="text-center mb-5">Presentación</h2>
+
+            <p class="mb-5 text-center">
+                En un futuro donde la censura ha borrado toda forma de imaginación, <strong>"Usher II"</strong> se
+                presenta como una aventura gráfica ambientada en Marte. El usuario recorre una mansión repleta de
+                espacios prohibidos, mientras la narrativa progresa mediante distintas escenas interactivas. Basada en
+                el relato de Ray Bradbury, la experiencia integra imágenes generadas con inteligencia artificial, diseño
+                sonoro y programación en p5.js, conformando una adaptación visual e interactiva que reinterpreta el
+                cuento original en un nuevo medio.
+            </p>
+        </div>
+
+        <div class="container" id="produccion">
+            <h2 class="text-center mb-5">Producción</h2>
+
+            <!-- Paso 1 -->
+            <div class="row align-items-center mb-5">
+                <div class="col-md-4 img-hover">
+                    <img src="img/diagrama.png" class="img-fluid rounded" alt="Guion y diagrama" />
+                </div>
+                <div class="col-md-8">
+                    <h4>1. Estructura narrativa</h4>
+                    <p>
+                        En esta etapa desarrollamos la estructura narrativa completa de la aventura, definiendo los
+                        textos y las pantallas que acompañan cada momento del recorrido interactivo. A partir del
+                        diagrama de flujo construimos los diferentes caminos posibles, las decisiones clave y los
+                        finales alternativos, organizando visualmente cómo progresa la historia y cómo se bifurcan las
+                        acciones del jugador. Este proceso permitió ajustar la coherencia del relato y asegurar una
+                        navegación clara entre escenas.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Paso 2 -->
+            <div class="row align-items-center mb-5">
+                <div class="col-md-4 img-hover">
+                    <img src="img/imagenes.png" class="img-fluid rounded" alt="Imagenes de la aventura gráfica" />
+                </div>
+                <div class="col-md-8">
+                    <h4>2. Desarrollo visual</h4>
+                    <p>
+                        En esta etapa generamos las imágenes utilizando inteligencia artificial, cuidando que todas
+                        compartieran una misma estética y unidad visual. Trabajamos ajustando los prompts y repitiendo
+                        variaciones hasta lograr escenarios, elementos y composiciones que fueran consistentes entre sí,
+                        construyendo un estilo claro y homogéneo para todo el proyecto.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Paso 3 -->
+            <div class="row align-items-center mb-5">
+                <div class="col-md-4 img-hover">
+                    <img src="img/codigo.png" class="img-fluid rounded" alt="Código de p5js" />
+                </div>
+                <div class="col-md-8">
+                    <h4>3. Estructura del código</h4>
+                    <p>
+                        En esta sección mostramos partes del código desarrollado en p5.js. La lógica del programa se
+                        organiza a partir de un sistema de estados que controla qué escena se muestra en cada momento,
+                        junto con condicionales que responden a los clics del jugador para avanzar o tomar decisiones.
+                        De este modo se coordinan imágenes, textos, sonidos y botones para construir la experiencia
+                        interactiva completa.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- INTEGRANTES -->
+    <section id="desarrolladores">
+        <div class="container">
+            <h2 class="text-center mb-4">Desarrolladores</h2>
+
+            <div class="row g-4 justify-content-center">
+
+                <div class="col-md-6 col-lg-4">
+
+                    <div class="card h-100">
+                        <img src="img/belu.jpeg" class="card-img-top" alt="Foto de Belén Erdmann" />
+                        <div class="card-body">
+                            <h5 class="card-title">Belén Erdmann</h5>
+                            <p class="card-text">Diseñó la estética visual de la aventura, creó los sonidos y colaboró
+                                en la programación, realizando ajustes y completando diferentes partes del código para
+                                lograr una experiencia fluida.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4">
+                    <div class="card h-100">
+                        <img src="img/rama.jpeg" class="card-img-top" alt="Foto de Ramiro Lescano" />
+                        <div class="card-body">
+                            <h5 class="card-title">Ramiro Lescano</h5>
+                            <p class="card-text">Desarrolló la estructura principal del código de la aventura gráfica y
+                                armó la base sobre la cual se continuó trabajando para finalizar su funcionamiento.</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- EXPLORAR -->
+    <section id="explorar" class="my-4">
+        <div class="container">
+            <h2 class="text-center mb-4">Explorar</h2>
+            <p class="mb-5 text-center">
+                ¡Sumergite en la aventura gráfica “Usher II”!
+                Explorá sus distintas escenas interactivas y viví el recorrido narrativo de la historia. Además, poné a
+                prueba tus
+                reflejos en el minijuego de acción “Colapso II”, donde tendrás que saltar y esquivar escombros para
+                sobrevivir.</p>
+            <div class="d-flex justify-content-center gap-3 my-4">
+
+                <!-- Aventura gráfica -->
+                <button type="button" class="btn btn-primary btn-lg" data-bs-toggle="modal"
+                    data-bs-target="#aventuraaa">
+                    Aventura gráfica
+                </button>
+
+                <div class="modal fade" id="aventuraaa" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+                    aria-labelledby="aventuraa" aria-hidden="true">
+                    <div class="modal-dialog modal-lg">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h1 class="modal-title fs-5" id="aventuraa">Modal title</h1>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                    aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body d-flex justify-content-center align-items-center">
+                                <iframe src="p51/index.html" frameborder="0" width="645" height="485"></iframe>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Juego interactivo -->
+                <button type="button" class="btn btn-primary btn-lg" data-bs-toggle="modal" data-bs-target="#juegooo">
+                    Juego interactivo
+                </button>
+
+                <div class="modal fade" id="juegooo" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+                    aria-labelledby="juegoo" aria-hidden="true">
+                    <div class="modal-dialog modal-lg">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h1 class="modal-title fs-5" id="juegoo">Modal title</h1>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                    aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body d-flex justify-content-center align-items-center">
+                                <iframe src="p52/index.html" frameborder="0" width="645" height="485"></iframe>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
